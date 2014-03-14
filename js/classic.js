@@ -53,7 +53,7 @@ var bookmarks = chrome.bookmarks.getTree(function(root_node) {
         var leaf = root_node[0].children[i];
         if (leaf.title && leaf.title === 'Bookmarks Bar') {
             bar_node = leaf;
-        } else if (leaf.title && leaf.title === 'Other Bookmarks') {
+        } else if (leaf.title && leaf.title === 'Other Bookmarks') { // TODO: What if there is a user-created folder called 'Other Bookmarks'?
             oth_node = leaf;
         }
     }
