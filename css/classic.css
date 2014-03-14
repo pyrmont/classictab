@@ -43,7 +43,7 @@ div#bookmarks > ul {
 }
 
 div#bookmarks ul > li {
-    background-image: url(images/default_favicon.png);
+    background-image: url(../images/default_favicon.png);
     background-position: 5px 3px;
     background-repeat: no-repeat;
     border: 1px solid #d2d2d5;
@@ -56,7 +56,7 @@ div#bookmarks ul > li {
 }
 
 div#bookmarks ul > li.group {
-    background-image: url(images/bookmark_bar_folder_osx.png);
+    background-image: url(../images/bookmark_bar_folder_osx.png);
 }
 
 div#bookmarks ul > li.other {
