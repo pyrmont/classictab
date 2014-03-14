@@ -1,0 +1,21 @@
+{
+  "name": "Classic Tab",
+  "description": "A minimal Google Chrome extension to implement the classic New Tab functionality.",
+  "version": "0.1",
+  
+  "incognito": "split",
+  
+  "chrome_url_overrides": {
+    "newtab": "classic.html"
+  },
+  
+  "permissions": [
+      "bookmarks",
+      "chrome://favicon/",
+      "history",
+      "tabs",
+      "topSites"
+  ],
+  
+  "manifest_version": 2
+}

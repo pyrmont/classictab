@@ -1,0 +1,122 @@
+* {
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0;
+    -webkit-padding-end: 0;
+    -webkit-padding-before: 0;
+    -webkit-padding-after: 0;
+}
+
+body {
+    color: #000000;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+div ul {
+    list-style: none;
+}
+
+div a {
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+div#bookmarks {
+    background-color: #d2d2d5;
+    border-radius: 3px;
+    margin: 10px auto 0;
+    padding: 0px 7px;
+    position: relative;
+    width: 95%;
+}
+
+div#bookmarks > ul {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 85%;
+    white-space: nowrap;
+}
+
+div#bookmarks ul > li {
+    background-image: url(images/default_favicon.png);
+    background-position: 5px 3px;
+    background-repeat: no-repeat;
+    border: 1px solid #d2d2d5;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 11px;
+    margin: 5px 3px;
+    padding: 5px 7px 5px 28px;
+    transition: background-color .12s linear, border .12s linear;
+}
+
+div#bookmarks ul > li.group {
+    background-image: url(images/bookmark_bar_folder_osx.png);
+}
+
+div#bookmarks ul > li.other {
+    position: absolute;
+    right: 10px;
+}
+
+div#bookmarks ul > li:hover {
+    background-color: #e9e8e7;
+    border: 1px solid #bdbcbd;
+    transition: background-color .12s linear, border .12s linear;
+}
+
+div#bookmarks ul > li a {
+    cursor: default;
+}
+
+div#bookmarks ul > li h3 {
+    cursor: default;
+    font-size: 1.0em;
+    font-weight: normal;
+}
+
+div#bookmarks ul.folder > div {
+    display: none;
+}
+
+div#thumbnails {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    bottom: 15%;
+    right: 10%;
+    width: 80%;
+}
+
+div#thumbnails li {
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 25%;
+}
+
+div#thumbnails li img.thumb {
+    background-image: linear-gradient(to bottom, #EBEBEB 0%, #A1A1A1 100%);
+    border: 1px solid #bdbcbd;
+    border-radius: 3px;
+    width: 85%;
+}
+div#thumbnails li h3 {
+    font-weight: normal;
+    margin: 10px auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 80%;
+}
+
+div#thumbnails li h3 img.favicon {
+    margin-bottom: -3px;
+    margin-right: 10px;
+}
