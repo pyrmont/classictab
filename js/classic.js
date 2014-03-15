@@ -169,3 +169,21 @@ var thumbnails = chrome.topSites.get(function(results) {
     var th_html = thContainerHtml(results);
     document.getElementById('thumbnails').innerHTML = th_html;
 });
+
+// Build the Recently Closed HTML
+function clContainerHtml(results) {
+    var MAX_TB = 8;
+    var html = '<ul>';
+    var inner_html = '';
+    
+    for (var i = 0; i < MAX_TB; i++) {
+        
+        if (i < results.length) {
+//            inner_html = inner_html + '<li><a href="' + results[i];
+        }
+    }
+    
+    html = html + inner_html + '</ul>';
+    
+    return html;
+}
