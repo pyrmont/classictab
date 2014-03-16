@@ -50,7 +50,7 @@ div#bookmarks ul a  {
 }
 
 div#bookmarks ul li {
-    background-image: url(../images/default_favicon.png);
+    background-image: url(../images/default_favicon.png); /* TODO: Add dimensions */
     background-repeat: no-repeat;
     font-size: 1.1rem;
     transition: background-color .12s linear, border .12s linear;
@@ -62,7 +62,7 @@ div#bookmarks ul li.empty {
 }
 
 div#bookmarks ul li.group {
-    background-image: url(../images/bookmark_bar_folder.png);
+    background-image: url(../images/bookmark_bar_folder.png); /* TODO: Add dimensions */
 }
 
 div#bookmarks ul.osx li.group {
